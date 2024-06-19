@@ -1,10 +1,19 @@
 [package]
 name = "git"
 version = "0.1.0"
+authors = ["Losti <lostforyou67a@gmail.com>"]
+description = ""
 edition = "2021"
+rust-version = "1.79.0"
+readme = "README.md"
+include = ["/src"]
 
 [dependencies]
 
 [[bin]]
 name = "git"
-path = "main.rs"
+path = "/src/main.rs"
+
+[[bin]]
+name = "checkout"
+path = "/src/checkout/example.rs"
