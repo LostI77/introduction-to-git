@@ -1,7 +1,9 @@
-fn doSomething() {
-    let something: u32 = returnSomething();
+fn main() {
+    let something: u32 = return_something();
+
+    println!("{}", something)
 }
 
-fn returnSomething() -> u32 {
+fn return_something() -> u32 {
     return 8;
 }
