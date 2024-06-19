@@ -1,8 +1,8 @@
 [package]
-name = "git"
+name = "introduction-to-git"
 version = "0.1.0"
 authors = ["Losti <lostforyou67a@gmail.com>"]
-description = ""
+description = "this repository is an attempt to guide you to understand how git works and its basic commands. "
 edition = "2021"
 rust-version = "1.79.0"
 readme = "README.md"
@@ -11,7 +11,7 @@ include = ["/src"]
 [dependencies]
 
 [[bin]]
-name = "git"
+name = "main"
 path = "/src/main.rs"
 
 [[bin]]
