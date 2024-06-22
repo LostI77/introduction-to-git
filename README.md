@@ -471,3 +471,28 @@ git switch test
 
 De esta forma nos podemos mover entre varias ramas! la referencia siempre sera el
 commit mas reciente, asi que tenlo en cuenta.
+
+> Los archivos que creemos dentro de la nueva rama con sus commits no se
+> podran ver en la rama main.
+
+## ¿Como añado cambios de una rama a otra?
+
+Para esto usaremos el comando `merge`! Primero vamos de nuevo a la rama
+que hayas creado y has un commit de tus cambios, pueden ser nuevas
+funcionalidades, archivos de configuración, etc. Ahora, volvamos a la rama
+principal (main) y escribamos el siguiente comando:
+
+```
+# git merge <branchName>
+git merge test
+```
+
+Flags:
+
+`--no-commit`
+`--commit`
+[`otros tags`](https://git-scm.com/docs/git-merge)
+
+En este caso use mi rama `test`, pero puedes poner la que hayas creado.
+Puedes añadirle un `commit` o simplemente usar la flag de `--no-commit`y
+finalmente pasaras los cambios de tu rama `test` a tu rama `main`
