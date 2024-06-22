@@ -6,14 +6,18 @@ description = "this repository is an attempt to guide you to understand how git 
 edition = "2021"
 rust-version = "1.79.0"
 readme = "README.md"
-include = ["/src"]
+include = ["./src"]
 
 [dependencies]
 
 [[bin]]
 name = "main"
-path = "/src/main.rs"
+path = "./src/main.rs"
 
 [[bin]]
 name = "checkout"
-path = "/src/checkout/example.rs"
+path = "./src/checkout/example.rs"
+
+[[bin]]
+name = "main-test"
+path = "./src/test/main.test.rs"
