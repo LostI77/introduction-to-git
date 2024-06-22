@@ -21,3 +21,7 @@ path = "./src/checkout/example.rs"
 [[bin]]
 name = "main-test"
 path = "./src/test/main.test.rs"
+
+[[bin]]
+name = "other-test"
+path = "./src/test/other.test.rs"
